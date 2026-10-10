@@ -1,0 +1,30 @@
+/* Larger reading choices; keep the saved keys and user's selected level. */
+html,html[data-text-size="normal"]{font-size:20px}
+html[data-text-size="large"]{font-size:22px}
+html[data-text-size="xlarge"]{font-size:24px}
+body{font-size:1.125rem;font-weight:600}
+button,select,input{font-weight:700}
+h1,h2,h3,strong{font-weight:750}
+.reading-controls select{min-height:50px}.reading-controls{flex-wrap:wrap}
+.range-filters{flex-wrap:wrap}.range-filters button,.view-tabs button{min-height:46px}
+.hero,.hero-grid,.hero-copy,.flashcard,.review-setup,.source-group,.source-link,.section-heading>div{min-width:0}
+body p{hyphens:auto}
+.flashcard #card-answer.long-answer{font-size:1.125rem;line-height:1.7}
+.viewer-note,.drawing-disclaimer,.collection-note{font-size:.85rem;line-height:1.75}
+.diagram-key,.drawing-notes span{font-size:.875rem;line-height:1.6;font-weight:650}
+.wonder-card-name,.peak-card-name,.card-name{font-weight:750}
+.hero-stats>div{max-width:100%}.hero-stats strong{white-space:normal}
+@media(max-width:1100px){.collection-toolbar,.site-header{flex-wrap:wrap}.hero,.hero-grid{grid-template-columns:1fr}.hero-summary,.hero-tagline{max-width:850px}.evidence-grid{grid-template-columns:1fr}.hero-stats strong{font-size:1.5rem}}
+@media(max-width:760px){.rating-buttons{grid-template-columns:1fr}.rating-buttons button{display:flex;justify-content:space-between;align-items:center;gap:15px;text-align:left;padding:15px 18px}.rating-buttons strong{font-size:1rem}.rating-buttons span{font-size:.8rem;margin:0}.site-header .main-nav{flex-basis:100%}.hero h1.long-title{font-size:clamp(1.7rem,8.4vw,2.7rem)}.section-heading h2{font-size:1.6rem}.flashcard{padding:27px 20px}.flashcard h2{font-size:1.25rem}.flashcard #card-answer{font-size:1.45rem}.flashcard #card-answer.long-answer{font-size:1.125rem}.review-setup{padding:24px 20px}.pair-panel{padding:24px 20px}}
+@media(max-width:500px){.reading-controls select{max-width:100%}.range-filters{gap:9px}.range-filters button{font-size:.8rem}.view-tabs button{font-size:.95rem}.hero h1:not(.long-title){font-size:clamp(1.85rem,10vw,2.6rem)}.hero-stats{gap:22px}.hero-stats strong{font-size:1.3rem}.hero .wonder-english,.hero .peak-alt{font-size:.75rem}.diagram-key{padding:0 12px}.diagram-key li{padding:6px 8px}.learn-heading h1{font-size:2rem}.main-nav button{padding:12px 0}.flashcard #card-question{hyphens:auto}.flashcard #card-answer{hyphens:auto}}
+@media(max-width:370px){.wonder-grid,.peak-grid{grid-template-columns:1fr!important}.hero h1.long-title{font-size:1.55rem}.main-nav{gap:8px}.main-nav button{font-size:.8rem}.nav-count{margin-left:4px;min-width:20px}.reading-controls{gap:12px}.hero .hero-stats{gap:18px}.hero-stats strong{font-size:1.2rem}.viewer-top{padding:12px 10px}.flashcard,.memory-anchor,.historical-context,.evidence-card,.engineering-panel{padding-left:18px;padding-right:18px}}
+
+/* Wide labels retain whole words while controls wrap to another row. */
+.view-tabs{flex-wrap:wrap;max-width:100%}.view-tabs button{flex:1 1 auto;min-width:0}
+.hero h1{hyphens:auto}
+@media(min-width:601px) and (max-width:1000px){.peak-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:500px){.viewer,.viewer-bottom,.viewer-content{max-width:100%}.view-tabs button{padding-left:7px;padding-right:7px}.peak-card-name{hyphens:auto}}
+
+h1,h2,h3{hyphens:auto}
+
+@media(max-width:370px){.view-tabs button{font-size:.875rem;padding-left:3px;padding-right:3px}}

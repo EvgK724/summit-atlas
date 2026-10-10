@@ -17,8 +17,8 @@
   try {progress=Learning.clean(JSON.parse(localStorage.getItem(STORE)));} catch { /* A new or unavailable store starts without invented history. */ }
   function toast(message) {set('#toast',message);$('#toast').classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>$('#toast').classList.remove('show'),4500);}
   function saveProgress() {
-    try {localStorage.setItem(STORE,JSON.stringify({version:1,cards:progress}));}
-    catch {if(!storageWarning){toast('Браузер не разрешил сохранение. Прогресс доступен до закрытия страницы.');storageWarning=true;}}
+    try {localStorage.setItem(STORE,JSON.stringify({version:1,cards:progress}));window.atlasHasUnsavedProgress=false;}
+    catch {window.atlasHasUnsavedProgress=true;if(!storageWarning){toast('Браузер не разрешил сохранение. Прогресс доступен до закрытия страницы.');storageWarning=true;}}
   }
   function writeURL() {
     const p=new URLSearchParams({peak:peakId,view});if(mode==='learn')p.set('mode','learn');

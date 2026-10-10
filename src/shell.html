@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="ru" data-text-size="large">
 <head>
+  <meta name="atlas-app" content="summit"><meta name="atlas-version" content="__APP_RELEASE__"><meta name="atlas-built" content="__APP_BUILT__">
   <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#080f18"><meta name="description" content="SUMMIT — интерактивный атлас 14 восьмитысячников Гималаев и Каракорума. Рельефы, карта, сравнение высот и интервальное повторение.">
   <meta name="application-name" content="SUMMIT"><meta name="apple-mobile-web-app-title" content="SUMMIT"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
@@ -17,7 +18,7 @@
  <button type="button" class="qr-trigger header-qr" aria-label="QR-код приложения">QR <span>⌗</span></button>
 </header>
 <main id="main-content">
- <div class="utility-bar"><span class="eyebrow utility-caption"><i></i> ГИМАЛАИ И КАРАКОРУМ</span><div class="reading-controls"><label for="text-size"><b aria-hidden="true">Aa</b> Размер текста</label><select id="text-size"><option value="normal">Обычный</option><option value="large" selected>Крупный</option><option value="xlarge">Очень крупный</option></select></div></div>
+ <div class="utility-bar"><span class="eyebrow utility-caption"><i></i> ГИМАЛАИ И КАРАКОРУМ</span><div class="reading-controls"><label for="text-size"><b aria-hidden="true">Aa</b> Размер текста</label><select id="text-size"><option value="normal">Крупный</option><option value="large" selected>Очень крупный</option><option value="xlarge">Максимальный</option></select></div></div>
  <div id="atlas-view">
   <section class="hero" id="peak-top" aria-label="Выбранная вершина">
    <div class="hero-copy"><div class="peak-meta"><span id="peak-rank"></span><i></i><span id="peak-range"></span></div><h1 id="peak-name"></h1><p class="peak-english" id="peak-english"></p><p class="hero-summary" id="peak-summary"></p><div class="hero-stats"><div><strong id="peak-height"></strong><span>метров над уровнем моря</span></div><div><strong id="peak-year"></strong><span>первое восхождение</span></div></div><button type="button" class="primary-button" id="remember-peak">Запомнить вершину <span>↗</span></button><p class="hero-location" id="peak-location"></p></div>
@@ -42,4 +43,5 @@
 <noscript><p style="padding:24px">Для интерактивного атласа включите JavaScript в браузере.</p></noscript>
 <div id="toast" class="toast" role="status"></div>
 <script>/*__DATA__*/</script><script>/*__DRAWINGS__*/</script><script>/*__LEARNING__*/</script><script>/*__APP__*/</script>
+<script>/*__UPDATER__*/</script>
 </body></html>
