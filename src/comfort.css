@@ -2,7 +2,10 @@
 html,html[data-text-size="normal"]{font-size:20px}
 html[data-text-size="large"]{font-size:22px}
 html[data-text-size="xlarge"]{font-size:24px}
-body{font-size:1.125rem;font-weight:600}
+/* Explicit body sizes avoid a stale rem base during first paint in mobile WebKit. */
+body{font-size:22.5px;font-weight:600}
+html[data-text-size="large"] body{font-size:24.75px}
+html[data-text-size="xlarge"] body{font-size:27px}
 button,select,input{font-weight:700}
 h1,h2,h3,strong{font-weight:750}
 .reading-controls select{min-height:50px}.reading-controls{flex-wrap:wrap}
